@@ -13,6 +13,11 @@
 		E2FF6A3629D1BC830088974B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FF6A3429D1BC830088974B /* Main.storyboard */; };
 		E2FF6A3829D1BC850088974B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FF6A3729D1BC850088974B /* Assets.xcassets */; };
 		E2FF6A3B29D1BC850088974B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FF6A3929D1BC850088974B /* LaunchScreen.storyboard */; };
+		E2FF6A4A29D1CA260088974B /* AlbumApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6A4929D1CA260088974B /* AlbumApi.swift */; };
+		E2FF6A4C29D1CBE00088974B /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6A4B29D1CBE00088974B /* AlbumModel.swift */; };
+		E2FF6A5129D1DB5E0088974B /* UIImageExtention .swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6A5029D1DB5E0088974B /* UIImageExtention .swift */; };
+		E2FF6A5329D1DBC90088974B /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6A5229D1DBC90088974B /* PhotoCollectionViewCell.swift */; };
+		E2FF6A5629D1E75F0088974B /* ShowImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF6A5529D1E75F0088974B /* ShowImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E2FF6A3729D1BC850088974B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2FF6A3A29D1BC850088974B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2FF6A3C29D1BC850088974B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FF6A4929D1CA260088974B /* AlbumApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumApi.swift; sourceTree = "<group>"; };
+		E2FF6A4B29D1CBE00088974B /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		E2FF6A5029D1DB5E0088974B /* UIImageExtention .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageExtention .swift"; sourceTree = "<group>"; };
+		E2FF6A5229D1DBC90088974B /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2FF6A5529D1E75F0088974B /* ShowImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,92 @@
 		E2FF6A2D29D1BC830088974B /* AlbumiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				E2FF6A2E29D1BC830088974B /* AppDelegate.swift */,
-				E2FF6A3029D1BC830088974B /* SceneDelegate.swift */,
-				E2FF6A3229D1BC830088974B /* ViewController.swift */,
-				E2FF6A3429D1BC830088974B /* Main.storyboard */,
-				E2FF6A3729D1BC850088974B /* Assets.xcassets */,
-				E2FF6A3929D1BC850088974B /* LaunchScreen.storyboard */,
+				E2FF6A4D29D1D8C50088974B /* Extentions */,
+				E2FF6A4829D1CA0B0088974B /* Api */,
+				E2FF6A4229D1C7380088974B /* Core */,
+				E2FF6A4329D1C7420088974B /* Model */,
+				E2FF6A4429D1C74A0088974B /* View */,
+				E2FF6A4529D1C7500088974B /* Controllers */,
+				E2FF6A4629D1C7700088974B /* Resources */,
 				E2FF6A3C29D1BC850088974B /* Info.plist */,
 			);
 			path = AlbumiOSChallenge;
+			sourceTree = "<group>";
+		};
+		E2FF6A4229D1C7380088974B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A2E29D1BC830088974B /* AppDelegate.swift */,
+				E2FF6A3029D1BC830088974B /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E2FF6A4329D1C7420088974B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A4B29D1CBE00088974B /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2FF6A4429D1C74A0088974B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A3429D1BC830088974B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2FF6A4529D1C7500088974B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A4729D1C78D0088974B /* Album */,
+				E2FF6A5429D1E7350088974B /* ImageView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2FF6A4629D1C7700088974B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A3729D1BC850088974B /* Assets.xcassets */,
+				E2FF6A3929D1BC850088974B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2FF6A4729D1C78D0088974B /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A3229D1BC830088974B /* ViewController.swift */,
+				E2FF6A5229D1DBC90088974B /* PhotoCollectionViewCell.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		E2FF6A4829D1CA0B0088974B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A4929D1CA260088974B /* AlbumApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		E2FF6A4D29D1D8C50088974B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A5029D1DB5E0088974B /* UIImageExtention .swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		E2FF6A5429D1E7350088974B /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				E2FF6A5529D1E75F0088974B /* ShowImageVC.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FF6A5329D1DBC90088974B /* PhotoCollectionViewCell.swift in Sources */,
+				E2FF6A4A29D1CA260088974B /* AlbumApi.swift in Sources */,
+				E2FF6A4C29D1CBE00088974B /* AlbumModel.swift in Sources */,
+				E2FF6A5629D1E75F0088974B /* ShowImageVC.swift in Sources */,
 				E2FF6A3329D1BC830088974B /* ViewController.swift in Sources */,
+				E2FF6A5129D1DB5E0088974B /* UIImageExtention .swift in Sources */,
 				E2FF6A2F29D1BC830088974B /* AppDelegate.swift in Sources */,
 				E2FF6A3129D1BC830088974B /* SceneDelegate.swift in Sources */,
 			);
